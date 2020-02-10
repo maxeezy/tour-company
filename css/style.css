@@ -4,14 +4,16 @@
     font-family: 'Open Sans Condensed', sans-serif;
 }
 
-button{
+button {
     cursor: pointer;
     box-sizing: border-box;
 }
 
 .container {
-    width: 1170px;
+    max-width: 1200px;
     margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 .icon {
@@ -69,10 +71,20 @@ button{
     font-size: 30px;
 }
 
+.navigation-2 {
+    display: none;
+    margin-top: 10px;
+}
+.img-navigation-2{
+    width: 30px;
+}
 .ul-header {
     display: flex;
     margin-top: 25px;
 
+}
+.ul-header-2{
+    display: none;
 }
 
 .li-header {
@@ -80,15 +92,34 @@ button{
     list-style: none;
 }
 
+.li-header-2 {
+    list-style: none;
+    background-color: transparent;
+    padding: 2px;
+}
+
 .a-nav {
-    font-size: 19px;
+    font-size: 20px;
     color: white;
     text-decoration: none;
+
 }
-.a-nav:hover{
+
+.a-nav-2 {
+    color: white;
+    text-decoration: none;
+    font-size: 17px
+}
+.a-nav-2:hover{
     color: rgb(255, 106, 79);
     transition: 0.5s;
 }
+
+.a-nav:hover {
+    color: rgb(255, 106, 79);
+    transition: 0.5s;
+}
+
 .call {
     margin-top: 195px;
     text-align: center;
@@ -135,9 +166,6 @@ button{
     width: 130px;
 }
 
-.span-constr {
-    margin-right: 10px;
-}
 
 .search-button {
     border: 1px solid transparent;
@@ -145,15 +173,16 @@ button{
     color: white;
     font-size: 20px;
 }
-.search-button:hover{
+
+.search-button:hover {
     color: rgb(255, 106, 79);
     background-color: white;
     border: 1px solid rgb(255, 106, 79);
     transition: 0.5s;
 }
 
-.tours{
-padding-bottom: 50px;
+.tours {
+    padding-bottom: 50px;
 }
 
 .tours-title {
@@ -169,8 +198,7 @@ padding-bottom: 50px;
 }
 
 .tour-x {
-    width: 351px;
-    height: 400px;
+    max-width: 31%;
     padding: 10px;
     border: 1px solid #eeeff1;
     cursor: pointer;
@@ -178,28 +206,35 @@ padding-bottom: 50px;
 
 .tour-x-img {
     width: 100%;
+    height: 268px;
 }
 
-.img-country{
+.img-country {
     width: 100%;
-    height: 230px;
+    height: 100%;
 }
-.tour-x-name{
+
+.tour-x-name {
     font-size: 24px;
     margin-bottom: 5px;
 }
-.tour-x-days{
+
+.tour-x-days {
     font-size: 20px;
     margin-bottom: 5px;
 }
 
-.tour-b{
+.tour-x-desc {
+    font-size: 18px;
+}
+
+.tour-b {
     display: flex;
     justify-content: center;
     margin-top: 25px;
 }
 
-.tour-butt{
+.tour-butt {
     border: 1px solid transparent;
     background-color: rgb(255, 106, 79);
     color: white;
@@ -207,7 +242,8 @@ padding-bottom: 50px;
     width: 130px;
     padding: 5px;
 }
-.tour-butt:hover{
+
+.tour-butt:hover {
     color: rgb(255, 106, 79);
     background-color: white;
     border: 1px solid rgb(255, 106, 79);
@@ -215,52 +251,57 @@ padding-bottom: 50px;
 }
 
 
-.news{
+.news {
     padding-top: 10px;
     padding-bottom: 50px;
     border-top: 1px solid #eeeff1;
     background-color: #f8f8f9;
 }
-.news-title{
+
+.news-title {
     font-size: 40px;
     text-align: center;
     margin-bottom: 40px;
 }
 
-.news-view{
+.news-view {
     display: flex;
     justify-content: space-around;
 }
 
-.news-x{
-    width: 40%;
+.news-x {
+    max-width: 40%;
     position: relative;
 }
 
-.news-img{
+.news-img {
     width: 100%;
-    min-height: 350px;
+    height: 350px;
 }
 
-.news-black{
+.news-black {
     position: absolute;
     top: 0;
-    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),  center, no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), center, no-repeat;
     width: 100%;
-    min-height: 350px;
+    height: 350px;
 }
-.news-x-title{
+
+.news-x-title {
     position: absolute;
     top: 40%;
     color: white;
     font-size: 25px;
-    width: 90%;
-    left: 10%;
+    margin-left: 10%;
+    margin-right: 10%;
+    text-align: center;
 }
-.news-b{
+
+.news-b {
     display: flex;
 }
-.button-news{
+
+.button-news {
     border: 1px solid transparent;
     background-color: rgb(255, 106, 79);
     color: white;
@@ -269,7 +310,8 @@ padding-bottom: 50px;
     padding: 5px;
     margin-top: -5px;
 }
-.button-news:hover{
+
+.button-news:hover {
 
     color: rgb(255, 106, 79);
     background-color: white;
@@ -278,13 +320,13 @@ padding-bottom: 50px;
 }
 
 
-
-.news-b{
+.news-b {
     margin-top: 60px;
     display: flex;
     justify-content: center;
 }
-.news-butt-all{
+
+.news-butt-all {
     border: 1px solid transparent;
     background-color: rgb(255, 106, 79);
     color: white;
@@ -292,7 +334,8 @@ padding-bottom: 50px;
     width: 130px;
     padding: 5px;
 }
-.news-butt-all:hover{
+
+.news-butt-all:hover {
     color: rgb(255, 106, 79);
     background-color: white;
     border: 1px solid rgb(255, 106, 79);
@@ -300,25 +343,25 @@ padding-bottom: 50px;
 }
 
 
-
-.countries{
+.countries {
     padding-top: 50px;
     padding-bottom: 50px;
 
 }
 
-.countries-title{
+.countries-title {
     font-size: 40px;
     text-align: center;
     margin-bottom: 40px;
 }
-.countries-view{
+
+.countries-view {
     display: flex;
     justify-content: space-between;
 }
 
-.countries-x{
-    width: 351px;
+.countries-x {
+    max-width: 31%;
     display: flex;
     flex-direction: column;
     border: 1px solid #eeeff1;
@@ -326,32 +369,34 @@ padding-bottom: 50px;
     padding-bottom: 20px;
 }
 
-.countries-x-img{
+.countries-x-img {
     width: 100%;
-    height: 230px;
+    height: 260px;
 }
 
-.countries-x-name{
+.countries-x-name {
     font-size: 24px;
     margin-bottom: 5px;
 }
-.countries-x-offers{
+
+.countries-x-offers {
     font-size: 20px;
 }
 
-.countries-x-wrap_offers-butt{
+.countries-x-wrap_offers-butt {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.countrues-b{
+.countrues-b {
     display: flex;
     justify-content: center;
     margin-top: 25px;
 
 }
-.countrues-butt-all{
+
+.countrues-butt-all {
     border: 1px solid transparent;
     background-color: rgb(255, 106, 79);
     color: white;
@@ -359,14 +404,15 @@ padding-bottom: 50px;
     width: 130px;
     padding: 5px;
 }
-.countrues-butt-all:hover{
+
+.countrues-butt-all:hover {
     color: rgb(255, 106, 79);
     background-color: white;
     border: 1px solid rgb(255, 106, 79);
     transition: 0.5s;
 }
 
-.countries-x-button_open{
+.countries-x-button_open {
     border: 1px solid transparent;
     background-color: rgb(255, 106, 79);
     color: white;
@@ -382,36 +428,339 @@ padding-bottom: 50px;
     transition: 0.5s;
 }
 
-.footer{
+.countries-x-button-2 {
+    display: none;
+}
+
+.footer {
     background-color: #131313;
     padding-top: 40px;
     padding-bottom: 30px;
 }
-.footer-blocks-wrap{
+
+.footer-blocks-wrap {
     display: flex;
     justify-content: space-around;
     margin-bottom: 20px;
 }
-.footer-block-x-link{
+
+.footer-block-x-link {
     margin-bottom: 5px;
 }
-.a-footer{
+
+.a-footer {
     color: white;
     font-size: 18px;
     text-decoration: none;
 }
-.footer-socials{
+
+.footer-socials {
     display: flex;
     justify-content: center;
     margin-bottom: 20px;
 }
-.img-social{
+
+.img-social {
     margin-right: 10px;
     width: 32px;
     height: 32px;
     cursor: pointer;
 }
-.footer-rights{
+
+.footer-rights {
     color: white;
     text-align: center;
+}
+
+
+@media (max-width: 1200px) {
+    .container {
+        max-width: 970px;
+    }
+
+    .logo {
+        width: 110px;
+    }
+
+    .name {
+        font-size: 28px;
+    }
+
+    .icon {
+        width: 22px;
+    }
+
+    .a-nav {
+        font-size: 19px;
+    }
+
+    .call-title {
+        font-size: 60px;
+    }
+
+    .call-explain {
+        font-size: 40px;
+    }
+
+    .type-1 {
+        width: 18%;
+    }
+
+    .type-2 {
+        width: 13%;
+    }
+
+    .tour-x {
+        max-width: 30%;
+    }
+
+    .tour-x-img {
+        height: 246px;
+    }
+
+    .tour-x-desc {
+        font-size: 17px;
+    }
+
+    .news-img {
+        height: 330px;
+    }
+
+    .news-x-title {
+        font-size: 23px;
+    }
+
+    .news-black {
+        height: 330px;
+    }
+
+    .countries-x {
+        max-width: 30%;
+    }
+
+    .countries-x-img {
+        height: 246px;
+    }
+
+    .countries-x-name {
+        font-size: 23px;
+    }
+
+    .countries-x-offers {
+        font-size: 18px;
+    }
+
+    .countries-x-button_open {
+        width: 150px;
+    }
+
+}
+
+@media (max-width: 992px) {
+    .container {
+        max-width: 750px;
+    }
+
+    .logo {
+        width: 95px;
+    }
+
+    .name {
+        font-size: 23px;
+    }
+
+    .li-header {
+        margin-left: 9px;
+    }
+
+    .a-nav {
+        font-size: 18px;
+    }
+
+    .tour-x-img {
+        height: 60%;
+    }
+
+    .call-title {
+        font-size: 55px;
+    }
+
+    .call-explain {
+        font-size: 35px;
+    }
+
+    .tours-title {
+        font-size: 35px;
+    }
+
+    .tour-x {
+        max-width: 29%;
+    }
+
+    .tour-x-img {
+        height: 200px;
+    }
+
+    .tour-x-desc {
+        font-size: 16px;
+    }
+
+    .news-title {
+        font-size: 35px;
+    }
+
+    .news-img {
+        height: 295px;
+    }
+
+    .news-black {
+        height: 295px;
+    }
+
+    .news-x-title {
+        font-size: 22px;
+    }
+
+    .button-news {
+        font-size: 19px;
+    }
+
+    .countries-x {
+        max-width: 29%;
+    }
+
+    .countries-x-img {
+        height: 220px;
+    }
+
+    .img-countries-b {
+        width: 24px;
+    }
+
+    .countries-x-button_open {
+        display: none;
+    }
+
+    .countries-x-button-2 {
+        display: flex;
+        border: 1px solid transparent;
+        background-color: rgb(255, 106, 79);
+        color: white;
+        width: 48px;
+        padding: 3px;
+        justify-content: center;
+        cursor: pointer;
+    }
+}
+
+@media (max-width: 767px) {
+    .container {
+        max-width: 480px;
+    }
+    .logo{
+        width: 75px;
+    }
+    .name{
+        font-size: 20px;
+    }
+    .navigation {
+        display: none;
+    }
+
+    .navigation-2 {
+        display: block;
+        margin-top: 24px;
+        position: relative;
+        cursor: pointer;
+    }
+    .navigation-2:hover .ul-header-2{
+        display: block;
+    }
+    .ul-header-2{
+        position: absolute;
+        right: 25px;
+        top: 4px;
+    }
+    .img-navigation-2{
+        width: 24px;
+    }
+    .call-title{
+        font-size: 39px;
+    }
+    .call-explain{
+        font-size: 25px;
+    }
+    .constructor{
+        height: 150px;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 0;
+        background-color: white;
+        margin-top: 200px;
+    }
+    .type-1{
+        width: 100%;
+        margin-bottom: 1px;
+    }
+    .type-2{
+        width: 24.5%;
+        background-color: white;
+    }
+    .search-button{
+        background-color: rgb(255, 106, 79);
+    }
+    .tour-view{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .tour-x{
+        max-width: 90%;
+        margin-bottom: 20px;
+    }
+    .tour-x-img{
+        height: 302px
+    }
+    .tour-x-desc{
+        font-size: 17px;
+    }
+    .news-view{
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+    .news-x{
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .countries-view{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .countries-x{
+        max-width: 90%;
+        margin-bottom: 20px;
+    }
+    .countries-x-img{
+        height: 250px;
+    }
+    @media (max-width: 399px) {
+        .container{
+            max-width: none;
+        }
+        .tours-title{
+            font-size: 33px;
+        }
+        .news-title{
+            font-size: 33px;
+        }
+        .countries-title{
+            font-size: 33px;
+        }
+        .tour-x-img{
+            height: 280px;
+        }
+    }
 }
